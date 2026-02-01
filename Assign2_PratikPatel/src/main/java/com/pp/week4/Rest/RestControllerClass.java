@@ -17,25 +17,57 @@ public class RestControllerClass {
 	@Autowired
     private MedicineServiceImpl medicineService;
 	
+	
+	@Autowired
+	private PrescriptionServiceImpl prescriptionService;
+	
+	
     @GetMapping("/")
     public String home() {
-        return "Welcome to the Medicine API!";
+        return "Welcome to the Medicine and Prescription API!";
     }
     
-    @GetMapping("/findall")
+    @GetMapping("/findallMed")
     public List<Medicine> findAllMedicine() {
         return medicineService.findAllMedicine();
     }
     
     
-    @PostMapping("/add")
+    @GetMapping("/findallPscript")
+    public List<Prescription> findAllPrescription() {
+        return prescriptionService.findAllPrescription();
+    }
+    
+    
+    
+    
+ 
+    
+    @PostMapping("/addMed")
     public String addMedicine(@RequestBody Medicine med) {
         medicineService.addMedicine(med);
         return "We have recorded the medicine";
     }
     
     
-    @PutMapping("/update")
+    @PostMapping("/addPscript")
+    public String addPrescription(@RequestBody Prescription pscript) {
+    		prescriptionService.addPrescription(pscript);
+        return "We have recorded the prescription";
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @PutMapping("/updateMed")
     public String updateMedicine(@RequestBody Medicine med) {
     	
     		medicineService.updateMedicine(med);
@@ -44,6 +76,18 @@ public class RestControllerClass {
     	
     }
     
+    
+    
+    
+    
+    @PutMapping("/updatePscript")
+    public String updatePrescription(@RequestBody Prescription pscript) {
+    	
+    		prescriptionService.updatePrescription(pscript);
+    		return "Prescription updated successfully!";
+    	
+    	
+    }
     
     
     
