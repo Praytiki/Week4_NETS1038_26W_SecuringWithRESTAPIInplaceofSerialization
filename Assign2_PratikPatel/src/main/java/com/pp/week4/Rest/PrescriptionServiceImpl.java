@@ -5,6 +5,22 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+/**
+ * 
+ * @Pratik Patel
+ * @Tuesday, February 3, 2026
+ * 
+ * 
+ * Description - Here, we are using the constructor to initialize our data and populate an ArrayList with those instances.
+ * 				We then define findAllPrescription by returning the populated array. We define addPrescription, which allows us to 
+ * 				add more instances of Medicine to the list. Finally, we define updatePrescription, which uses a for-loop to search 
+ * 				through the list by ID and replace an old instance with a new Medicine instance. Again, this is all
+ * 				similar to Medicine except we also need to populate Medicine and added it to the Array.
+ * 
+ * 
+ */
+
+
 
 @Service
 public class PrescriptionServiceImpl implements PrescriptionServiceInterface{

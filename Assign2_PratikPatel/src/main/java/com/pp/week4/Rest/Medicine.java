@@ -1,5 +1,23 @@
 package com.pp.week4.Rest;
 
+
+
+
+/**
+ * 
+ * @Pratik Patel
+ * @Tuesday, February 3, 2026
+ * 
+ * 
+ * Description - Here, we are creating getters and setters with constructors.
+ * 				When a Medicine object is invoked, the required information is passed into the Medicine constructor.
+ * 				Subsequently, we can retrieve information using getters and modify or update data using setters.
+ * 				This approach protects variables via encapsulation and ensures data integrity through controlled access.
+ * 
+ * 
+ */
+
+
 public class Medicine {
 	
 	public Medicine(int id, String name, String description, String price, String datedue) {

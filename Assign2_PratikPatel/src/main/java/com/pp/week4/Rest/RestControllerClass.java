@@ -10,6 +10,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+/**
+ * 
+ * @Pratik Patel
+ * @Tuesday, February 3, 2026
+ * 
+ * 
+ * Description - Here, we are defining the REST endpoints for the application. Using annotations, 
+ * 				we allow tools like Postman to interact with our API. Each method maps a specific HTTP request (GET, POST, or PUT) 
+ * 				to a service function, enabling users to find, add, and update records within the system.
+ * 
+ * 
+ * 
+ */
+
+
+
+
 @RestController
 @RequestMapping("/api")
 public class RestControllerClass {
