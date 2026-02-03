@@ -1,8 +1,6 @@
 package com.pp.week4.Rest;
 
 
-
-
 /**
  * 
  * @Pratik Patel
@@ -69,8 +67,6 @@ public class Medicine {
 	public void setDatedue(String datedue) {
 		this.datedue = datedue;
 	}
-	
-	
 	
 	
 	
